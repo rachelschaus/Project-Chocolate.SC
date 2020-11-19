@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate</title>
+    <style>
+        body {
+            background: pink;
+        }
+        h1 {
+            text-align: center;
+            color: brown
+        }
+        h2 {
+            text-align: center;
+            border: 1px solid #2b070d;
+            font-size: 18px;
+            border-radius: 4px;
+            width: 30%;
+            display: block;
+            margin: 0 auto;
+        }
+        img {
+            display: block;
+            margin: 0 auto;    
+            padding: 20px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        p {
+            line-height: 2;
+            font-size: 14px
+            margin: 10 10 10px
+            
+        }
+
+        button {
+            display: block; 
+            margin: 20px auto;
+            background: crimson;
+            color: black;
+            font-size: 20px;
+            padding: 20px 30px; 
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+        }
+        button:hover {
+          opacity: 0.9;
+          cursor: pointer;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 60px;
+        }
+       .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 14px; 
+                }
+       .learn-more:hover {
+           text-decoration: underline;
+       }
+       .footer {
+           text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+   <h1>I Love Chocolate
+    </h1> 
+    <h2>...especially rich <em>ooey gooey</em> Belgium Chocolate
+         </h2>
+
+         <img src="http://www.holdsworthfoods.co.uk/images/srv/product-enlargement/Frozen/Pastry%20and%20Patisserie/Cakes/77376%20Belgian%20Chocolate%20Cake.jpg"
+         alt="Chocolatecake">
+         <p>
+            <center>Belgian chocolate is chocolate produced in Belgium. <br />A major industry since the 19th century, today it forms an important
+            part of the nation's economy and culture.<br />
+            <br />
+            <a 
+            href="https://en.wikipedia.org/wiki/Belgian_chocolate"
+            target="_blank"
+            class="learn-more"
+            >
+            <strong>Learn more</strong> on Wikipedia  
+        </a></center><br /><br />
+           <button class="buy-button">
+               Buy Belgium Chocolate
+           </button>          
+         </p>
+
+         <p class="footer">
+             This page was built by Rachel Schaus.
+         </p>
+       </div>
+       <script> 
+       function buy() {
+         let name = prompt("What is your name?");
+         let email = prompt("What is your email address?");
+         let like = prompt("Do you like Belgian Chocolate?");
+
+         if (like === "yes") {
+            alert("Great! We can be friends, " + name + ".");
+            } else {
+                alert("Sorry, " + name + ", we cannot be friends.");
+            }
+           }
+    let buyButton = document.querySelector(".buy-button");
+    buyButton.addEventListener("click", buy);
+
+    </script>
+</body> 
+</html>
